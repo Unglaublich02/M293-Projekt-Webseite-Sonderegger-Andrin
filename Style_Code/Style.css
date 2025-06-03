@@ -1,0 +1,392 @@
+/*Alles*/
+*{
+    font-family: 'EB Garamond';
+}
+
+
+/*Navigation*/
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid white;
+    justify-content: flex-end;
+    background-color: #6b9080;
+    position: fixed;
+    z-index: 1000;
+}
+.nav_ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.Navigation {
+    text-decoration: none;
+    color: white;
+    font-size: 160%;
+    padding: 8px 40px;
+}
+
+
+/*Background*/
+body {            
+    background-color: #6B9080;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 1000px; 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+}
+
+.title-container {
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 220%; 
+    font-weight: bold; 
+    text-align: center;
+    z-index: 10;
+}
+
+
+/*Footer*/
+footer {
+    display: flex;
+    background-color: #a4c3b2;
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-decoration: none;
+}
+
+.footer {
+    color: black;
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer_text {
+    text-decoration: none;
+    color: black;
+}
+
+/*Texte*/
+.text_Titel {
+    font-size: 330%;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    white-space: normal;
+    word-break: break-word;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Background_Color_DarkGreen {
+    background-color: #6B9080;
+}
+.Background_Color_LightDarkGreen {
+    background-color: #A4C3B2;
+}
+.Background_Color_LightGreen {
+    background-color: #CCE3DE;
+}
+.Background_Color_LightBlueGreen {
+    background-color: #EAF4F4;
+}
+.Background_Color_LightBlue {
+    background-color: #F6FFF8;
+}
+.text_Beschreibung {
+    font-size: 150%;
+    padding: 20px;
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.Portfolio_Beschreibung_text {
+    font-size: 150%;
+    padding: 23px;
+    text-align: left;
+    color: black;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.Portfolio_Beschreibung {
+    display: flex;
+    width: 100%;
+    background-color: #EAF4F4;
+    border: solid white 1px;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+    flex-direction: column;
+    flex-flow: row;
+    align-items: center;
+}
+
+.text_Kontaktformular {
+    font-size: 150%;
+    padding-top: 20px;
+    text-align: left;
+    color: black;
+    white-space: normal;
+    word-break: break-word; 
+    height: fit-content;
+    width: 100%;
+    margin-left: 15%;
+}
+
+
+
+
+
+.UeberMich {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-start;
+}
+.Hobbys {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-end;
+}
+.Fähigkeiten {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-start;
+}
+.Portfolio {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-start;
+}
+.Portfolio_flex {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.Kontakt {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-start;
+}
+.Kontaktformular {
+    display: flex;
+    margin: 32px 8px;
+    align-items: self-end;
+
+}
+.Kontaktformular_anordnung {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    background-color: #F6FFF8;
+    border: solid white 1px;
+    border-radius: 15px;
+    margin: 32px 8px;
+    flex-wrap: wrap ;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.Ich {
+    display: flex;
+    margin: 32px 8px;
+    flex-direction: column;
+    flex-flow: row;
+    align-items: center;
+    width: 20%;
+}
+.MeinFoto {
+    width: 100%;
+    border-radius: 10%;
+}
+.image_Portfolio {
+    width: 30%;
+    border-radius: 3%;  
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.image_Portfolio_laengs {
+    width: 45%;
+    border-radius: 3%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.AusfuellFelder {
+    display: flex;
+    width: 70%;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 15px;
+    background-color: #EAF4F4;
+    justify-items: center;
+    margin-top: 5px;
+}
+.Senden_Button {
+    display: flex;
+    width: 10%;
+    min-width: 100px;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 15px;
+    background-color: #EAF4F4;
+    justify-items: center;
+    margin-top: 25px;
+    margin-left: 45%;
+    margin-right: 45%;
+    justify-content: center;
+    font-size: 24px;
+}
+.Feld_Titel {
+    display: flex;
+    width: 20%;
+    height: 300px;
+    border: solid white 1px;
+    border-radius: 15px;
+    margin: 32px 8px;
+    flex-direction: column;
+    flex-flow: row;
+    align-items: center;
+    min-width: 150px;
+}
+.Feld_Beschreibung {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    border: solid white 1px;
+    border-radius: 15px;
+    margin: 32px 8px;
+    flex-wrap: wrap ;
+    min-width: 300px;
+}
+.div_Bauwagen {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border: solid white 1px;
+    border-radius: 15px;
+    margin: 32px 8px;
+    flex-direction: column;
+    flex-flow: row;
+    align-items: center;
+}
+.div_Fotos {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    border-radius: 15px;
+    margin: 32px 8px;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+.F1_Video {
+    width: 45%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+
+
+@media (max-width: 800px) {
+    .Feld_Beschreibung {
+        width: 100%;    
+    }
+
+    .Feld_Titel {
+        width: 100%;
+    }
+    .UeberMich {
+        flex-wrap: wrap;
+    }
+    .Ich {
+        width: 100%;
+    }
+    .Hobbys {
+        flex-wrap: wrap-reverse;
+    }
+    .Fähigkeiten {
+        flex-wrap: wrap-reverse;
+    }
+    .Portfolio {
+        flex-wrap: wrap;
+    }
+    .Portfolio_flex {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .div_Fotos {
+        width: 100%;
+    }
+    .Kontakt {
+        flex-wrap: wrap-reverse ;
+    }
+    .Kontaktformular {
+        flex-wrap: wrap;
+    }
+    .Kontaktformular_anordnung {
+        width: 100%;
+    }
+    .Navigation {
+        font-size: 120%;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 510px) {
+    .nav_ul {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    nav {
+        justify-content: center;
+    }
+    .Navigation {
+        font-size: 140%;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .title-container {
+        font-size: 160%; 
+    }
+
+}

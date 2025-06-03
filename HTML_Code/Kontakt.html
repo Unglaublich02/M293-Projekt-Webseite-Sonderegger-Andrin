@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\Style_Code\Style.css">
+    <title>Kontakt</title>
+    
+</head>
+<body>
+        <nav>
+        <ul class="nav_ul">
+            <li>
+                <a href="..\index.html" class="Navigation">Über mich</a>
+            </li>
+            <li>
+                <a href="Faehigkeiten.html" class="Navigation">Fähigkeiten</a>
+            </li>
+            <li>
+                <a href="Portfolio.html" class="Navigation">Portfolio</a>
+            </li>
+            <li>
+                <a href="Kontakt.html" class="Navigation">Kontakt</a>
+            </li>
+        </ul> 
+    </nav>
+
+    <div class="image-container">
+        <div class="title-container">
+            <h1>Kontakt</h1>
+        </div>
+        <img src="..\Files\Forest.jpg" alt="Bild">
+    </div>
+
+    <div class="background-color"></div>
+    
+    <div class="Kontakt">
+        
+        <div class="Feld_Beschreibung Background_Color_LightBlueGreen">
+            <span class="text_Beschreibung">
+                <ul>
+                    <li>Name: Andrin Sonderegger</li>
+                    <li>Wohnort: 9436 Balgach, Schweiz</li>
+                    <li>E-Mail: andirn.sonderegger@bluewin.ch</li>
+                    <li>Telefon +41 79 488 49 44</li>
+                    <li>Adresse: Siedlung Lärchenhof 1278, 9436 Balgach, Schweiz</li>
+                    <li>Montag - Freitag, 17:00-20:00 Uhr</li>
+                </ul>
+            </span>
+        </div>
+
+        <div class="Feld_Titel Background_Color_LightDarkGreen">
+            <span class="text_Titel">Kontakt</span>
+        </div>
+    </div>
+
+    <div class="Kontaktformular">
+        <div class="Feld_Titel Background_Color_LightGreen">
+            <span class="text_Titel">Kontakt<br>formular</span>
+        </div>
+
+            <form onsubmit="handleSubmit(event)" class="Kontaktformular_anordnung">
+                <label class="text_Kontaktformular" for="vorname">Vorname:</label><br>
+                <input type="text" id="vorname" name="vorname" class="AusfuellFelder"><br>
+              
+                <label class="text_Kontaktformular" for="nachname">Nachname:</label><br>
+                <input type="text" id="nachname" name="nachname" class="AusfuellFelder"><br>
+              
+                <label class="text_Kontaktformular" for="anliegen">Anliegen:</label><br>
+                <input type="text" id="anliegen" name="anliegen" class="AusfuellFelder"><br>
+              
+                <label class="text_Kontaktformular" for="email">E-Mail:</label><br>
+                <input type="text" id="email" name="email" class="AusfuellFelder"><br>
+              
+                <input type="submit" value="Senden" class="Senden_Button">
+              </form>
+              
+              <script>
+                function handleSubmit(event) {
+                  event.preventDefault(); // Verhindert Neuladen der Seite
+                  alert("Kontaktformular wurde erfolgreich abgeschickt");
+                  
+                  // Optional: Daten verarbeiten (z. B. abspeichern via AJAX)
+              
+                  // Alle Felder leeren
+                  document.getElementById("vorname").value = "";
+                  document.getElementById("nachname").value = "";
+                  document.getElementById("anliegen").value = "";
+                  document.getElementById("email").value = "";
+                }
+              </script>
+
+    </div>
+    
+
+    <footer>
+        <span class="footer">© 2025 Andrin Sonderegger. Alle Rechte vorbehalten.<br>
+            Kontakt:<br> E-Mail: andrin.sonderegger@bluewin.ch<br> Telefon: +41 79 488 49 44<br>
+            Rechtliches:<br>
+            <a class="footer_text" href="..\Files\Datenschutzerklaerung.pdf" target="_blank" >Datenschutzerklärung</a> | <a class="footer_text" href="..\Files\Impressum.pdf" target="_blank" >Impressum</a></span>
+    </footer>
+ 
+
+</body>
+</html>
